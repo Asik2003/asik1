@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3F51B5"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -21,10 +22,11 @@
         android:id="@id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:backgroundTint="#009688"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/botton_nav_menu"/>
+        app:menu="@menu/botton_nav_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
