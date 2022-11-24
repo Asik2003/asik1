@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A4EDE7"
+    android:background="#7AA6A3"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -22,7 +22,7 @@
         android:id="@id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:backgroundTint="#00BCD4"
+        app:backgroundTint="#115F68"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

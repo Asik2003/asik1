@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A4EDE7">
+    android:background="#7AA6A3">
 
     <RadioButton
         android:id="@+id/radioButton"
