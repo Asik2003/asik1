@@ -45,12 +45,12 @@ dependencies {
     implementation "androidx.room:room-runtime:2.4.3"
     annotationProcessor "androidx.room:room-compiler:2.4.3"
     //recyclerview
-    implementation "andridx/recyclerview:recyclerview:1.1.0"
+    implementation "andridx/recyclerview:recyclerview:1.2.1"
     //size unit
-    implementation "com.intuit.sdp:sdp-andrid:1.0.6"
-    implementation "com.intuit.ssp:ssp-andrid:1.0.6"
+    implementation "com.intuit.sdp:sdp-andrid:1.1.0"
+    implementation "com.intuit.ssp:ssp-andrid:1.1.0"
     //material design
     implementation 'com.google.android.material:material:1.7.0'
-    //rounded ImagaView
-    implementation 'com.maleramen:roundedimageviw:2.3.0'
+    //rounded ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 }
