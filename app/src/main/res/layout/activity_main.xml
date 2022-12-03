@@ -7,30 +7,20 @@
     android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textMyNotes"
-        android:layout_width="390dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="650dp"
-        android:background="#635050"
-        android:backgroundTint="#FF5722"
-        android:text="My Notes"
-        android:textColor="#F4F4F4"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <FrameLayout
         android:id="@+id/frameLayout2"
-        android:layout_width="0dp"
+        android:layout_width="203dp"
         android:layout_height="0dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="325dp"
+        android:layout_marginBottom="401dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
     </FrameLayout>
 
@@ -38,11 +28,72 @@
         android:id="@id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:backgroundTint="#115F68"
+        android:layout_marginTop="640dp"
+        android:layout_marginBottom="15dp"
+        app:backgroundTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/button_nav_menu"
+        tools:layout_editor_absoluteX="0dp">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="568dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/botton_nav_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/textMyNotes">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_search_24"
+            android:background="@color/colorWhite"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:background="@null"
+            android:hint="Search notes"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textMyNotes"
+        android:layout_width="390dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FF5722"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="My Notes"
+        android:textColor="#FAFAFA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
