@@ -4,8 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7AA6A3"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textMyNotes"
+        android:layout_width="390dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="650dp"
+        android:background="#635050"
+        android:backgroundTint="#FF5722"
+        android:text="My Notes"
+        android:textColor="#F4F4F4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
