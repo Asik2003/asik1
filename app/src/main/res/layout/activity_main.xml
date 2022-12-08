@@ -78,11 +78,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#2E2727"
+            android:background="#5A5858"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_baseline_search_24" />
 
         <EditText
+            android:id="@+id/ba"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
