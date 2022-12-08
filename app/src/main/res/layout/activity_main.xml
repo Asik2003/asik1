@@ -7,6 +7,13 @@
     android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="212dp"></LinearLayout>
+
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="203dp"
@@ -45,6 +52,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="568dp"
+        android:background="#5A5858"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="10dp"
@@ -56,22 +64,22 @@
         app:layout_constraintTop_toBottomOf="@+id/textMyNotes">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2E2727"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_baseline_search_24"
-            android:background="@color/colorWhite"/>
+            android:src="@drawable/ic_baseline_search_24" />
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:background="@null"
+            android:backgroundTint="#131313"
             android:hint="Search notes"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:textColor="@color/colorWhite"
-            />
+            tools:ignore="TouchTargetSizeCheck" />
 
 
     </LinearLayout>
@@ -81,9 +89,9 @@
         android:layout_width="390dp"
         android:layout_height="31dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="10dp"
         android:background="#FF5722"
         android:backgroundTint="@color/colorPrimary"
         android:text="My Notes"
