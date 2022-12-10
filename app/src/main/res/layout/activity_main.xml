@@ -7,28 +7,24 @@
     android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="414dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="604dp"
-        android:orientation="horizontal"
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="293dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="382dp"
-            android:layout_height="34dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
-            app:tint="@color/colorWhite" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/layoutSearch"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        app:tint="@color/colorWhite" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
-        android:layout_width="203dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="86dp"
         android:layout_marginTop="330dp"
@@ -48,20 +44,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="640dp"
-        android:layout_marginBottom="15dp"
         app:backgroundTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/button_nav_menu"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="-92dp">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <LinearLayout
         android:id="@+id/layoutSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_width="390dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="568dp"
         android:background="#5A5858"
@@ -84,8 +80,8 @@
 
         <EditText
             android:id="@+id/ba"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="345dp"
+            android:layout_height="match_parent"
             android:layout_marginStart="12dp"
             android:backgroundTint="#131313"
             android:hint="Search notes"
@@ -99,12 +95,12 @@
 
     <TextView
         android:id="@+id/textMyNotes"
-        android:layout_width="390dp"
-        android:layout_height="31dp"
+        android:layout_width="302dp"
+        android:layout_height="42dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:background="#FF5722"
         android:backgroundTint="@color/colorPrimary"
         android:text="My Notes"
@@ -112,7 +108,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/layoutSearch"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
