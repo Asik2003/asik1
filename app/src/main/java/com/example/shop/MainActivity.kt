@@ -1,18 +1,24 @@
 package com.example.shop
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.service.controls.actions.FloatAction
-import android.view.View
-import android.widget.Button
-import android.widget.ImageView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.example.shop.databinding.ActivityMainBinding
+
 
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
 
 
 
